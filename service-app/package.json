@@ -1,6 +1,7 @@
 {
   "name": "service-app",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@fingerprintjs/fingerprintjs": "^3.3.0",
