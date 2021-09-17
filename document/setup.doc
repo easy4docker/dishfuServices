@@ -1,0 +1,9 @@
+Part A-- NPM project creation
+
+1. npx create-react-app service-app
+
+2. cd service-app
+
+3. change package.json file with   
+    from "start": "react-scripts start",
+    to "start": "PORT=3100 react-scripts start",
