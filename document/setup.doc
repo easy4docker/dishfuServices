@@ -9,3 +9,6 @@ Part A-- NPM project creation
     to "start": "PORT=3100 react-scripts start",
 
     add one line with direct directory  "homepage": "./",
+
+Part B - React Webcam Barcode Scanner
+https://www.npmjs.com/package/react-webcam-barcode-scanner
