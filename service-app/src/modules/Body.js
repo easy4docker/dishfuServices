@@ -3,24 +3,22 @@ import { Container } from 'react-bootstrap';
 import BarcodeScannerComponent from "./mobileComps/BarcodeScannerComponent.js";
 
 function Body(props) {
-  const [ data, setData ] = React.useState('Not Found');
+  const [ data, setData ] = React.useState('--');
 
   useEffect(() => {
   }, []);
 
   return (
     <Container fluid={true} className="m-0 p-0">
-      <span>yyy
       <BarcodeScannerComponent
-        width={500}
-        height={500}
+        width={'100%'}
+        height={'100%'}
         onUpdate={(err, result) => {
           if (result) setData(result.text)
           else setData('Not Found')
         }}
       />
       <p>{data}</p>
-    </span>
     </Container>
    
   );
