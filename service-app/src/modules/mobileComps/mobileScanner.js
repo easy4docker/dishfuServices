@@ -25,7 +25,7 @@ function MobileScanner(props) {
       <Container className="p-1">
       {!scanStatus ? '' : (<BarcodeScannerComponent
         width={'100%'}
-        height={'400'}
+        height={'360'}
         onUpdate={(err, result) => {
           if (result) setData(result.text)
           else setData('')
