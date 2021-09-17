@@ -21,15 +21,17 @@ function MobileScanner(props) {
   const statusSwitch = ()=>{
     setScanStatus(scanStatus ? false : true);
   }
-  return (<Container fluid={true} className="m-1 p-1 text-center">
+  return (<Container fluid={true} className="p-1 text-center">
+      <Container className="p-1">
       {!scanStatus ? '' : (<BarcodeScannerComponent
-        width={'300'}
-        height={'300'}
+        width={'80%'}
+        height={'80%'}
         onUpdate={(err, result) => {
           if (result) setData(result.text)
           else setData('')
         }}
       />)}
+      </Container>
       <p>{data}</p>
       {!scanStatus ? (<Button onClick={statusSwitch} className="m-1">Start Scan</Button>) :
       (<Button onClick={statusSwitch} className="m-1">Stop Scan</Button>)}
