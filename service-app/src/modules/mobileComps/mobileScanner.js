@@ -22,10 +22,10 @@ function MobileScanner(props) {
     setScanStatus(scanStatus ? false : true);
   }
   return (<Container fluid={true} className="p-1 text-center">
-      <Container fluid={true} className="p-1">
+      <Container fluid={true} className="p-1 text-center">
       {!scanStatus ? '' : (<BarcodeScannerComponent
-        width={'400'}
-        height={'400'}
+        width={'100%'}
+        height={'80%'}
         onUpdate={(err, result) => {
           if (result) setData(result.text)
           else setData('')
